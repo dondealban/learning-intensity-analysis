@@ -1,6 +1,5 @@
 # Learning the Intensity Analysis framework
-
-This is a repository set up as my personal exercise for learning the Intensity Analysis framework [(Aldwaik & Pontius 2012)](#aldwaik_pontius_2012), an approach that unifies the measurements of size and stationarity of land changes at three levels: interval, category, and transition, using the `intensity.analysis` R package implementation [(Pontius & Khallaghi 2019)](https://cran.r-project.org/web/packages/intensity.analysis/index.html). It can also be used as a tutorial for someone interested in learning structural topic modeling for their research projects.
+This is a repository set up as my personal exercise for learning the Intensity Analysis framework [(Aldwaik & Pontius 2012)](#aldwaik_pontius_2012), an approach that unifies the measurements of size and stationarity of land changes at three levels: interval, category, and transition, using the `intensity.analysis` R package implementation [(Pontius & Khallaghi 2019)](https://cran.r-project.org/web/packages/intensity.analysis/index.html). It can also be used as a tutorial for someone interested in learning Intensity Analysis for their research projects.
 
 <a name="references"></a>
 ## References
