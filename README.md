@@ -11,7 +11,7 @@ The **Intensity Analysis** framework is a quantitative method to analyse land co
 <a name="dataset"></a>
 
 ## Dataset
-The dataset I used to illustrate the application of Intensity Analysis using the `intensity.analysis` package were extracted from the [global 24-year annual time-series global land cover maps](https://www.esa-landcover-cci.org) developed by the European Space Agency Climate Change Initiative (ESA CCI). The land cover data covers the Tanintharyi Region in southern Myanmar, a region experiencing profound land cover changes as a result of political and economic transitions. The land cover change analysis involves studying changes over three time-intervals (1992–1997, 1997–2004, 2004–2015) at four time-points: 1992, 1997, 2004, 2015. (Note that in the land-cover regime shift [paper](https://doi.org/10.3390/su11041139), we analysed annual land cover change over 24 years from 1992–2015.) The land cover rasters are located in the [raster data folder](https://github.com/dondealban/learning-intensity-analysis/tree/master/raster%20data) of this repository.
+The dataset I used to illustrate the application of Intensity Analysis using the `intensity.analysis` package were extracted from the [global 24-year annual time-series global land cover maps](https://www.esa-landcover-cci.org) developed by the European Space Agency Climate Change Initiative (ESA CCI). The land cover data covers the Tanintharyi Region in southern Myanmar, a region experiencing profound land cover changes as a result of political and economic transitions. The land cover change analysis involves studying changes over three time-intervals (1992–1997, 1997–2004, 2004–2015) at four time-points only: 1992, 1997, 2004, 2015. (Note that in the land-cover regime shift [paper](https://doi.org/10.3390/su11041139), we analysed annual land cover change over 24 years from 1992–2015.) The land cover rasters are located in the [raster data folder](https://github.com/dondealban/learning-intensity-analysis/tree/master/raster%20data) of this repository.
 
 <a name="workflow"></a>
 
@@ -98,6 +98,32 @@ CIA.output <- CIA(crosstabulation, time.points, categories)
 TIA.output <- TIA(crosstabulation, time.points, categories)
 ```
 where **IIA**, **CIA**, and **TIA** refer to interval-level, category-level, and transition-level of Intensity Analysis, respectively.
+
+<a name="view_outputs"></a>
+
+### E. View Outputs
+To view the cross-tabulation matrices, we can write `crosstabulation` to print the multiple cross-tabulation matrices that were calculated for each time-interval. An alte
+```R
+crosstabulation[[1]]
+```
+
+<a name="save_outputs"></a>
+
+### F. Save Outputs
+We can save the outputs of the Intensity Analysis as CSV files as show in the `intensity.analysis` package [vignette](https://cran.r-project.org/web/packages/intensity.analysis/vignettes/README.html):
+```R
+# Interval-level Intensity Analysis
+IIAname <- file.path(normalizePath(getwd()), "IIA.csv")
+IIA2csv(IIA.output, time.points, IIAname)
+
+# Category-level Intensity Analysis
+CIAname <- file.path(normalizePath(getwd()), "CIA.csv")
+CIA2csv(CIA.output, time.points, categories, CIAname)
+
+# Transition-level Intensity Analysis
+TIAname <- file.path(normalizePath(getwd()), "TIA.csv")
+TIA2csv(TIA.output, time.points, categories, TIAname)
+```
 
 
 <a name="references"></a>
