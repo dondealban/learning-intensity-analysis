@@ -31,8 +31,9 @@ r2004 <- raster('Landscape_2004.tif')
 r2015 <- raster('Landscape_2015.tif')
 ```
 Note that these raw land cover maps have the following categories:
+
 Pixel Value | Land Cover Categories
------------ | ---------------------
+----------- | ----------------------
 0           | No Data
 1           | Forest
 2           | Mosaic Vegetation

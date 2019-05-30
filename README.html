@@ -136,7 +136,45 @@ library(intensity.analysis)   # Package for intensity of change for comparing ca
 r1997 &lt;- raster('Landscape_1997.tif')
 r2004 &lt;- raster('Landscape_2004.tif')
 r2015 &lt;- raster('Landscape_2015.tif')</code></pre>
-<p>Note that these raw land cover maps have the following categories: Pixel Value | Land Cover Categories ———– | ——————— 0 | No Data 1 | Forest 2 | Mosaic Vegetation 3 | Shrubland 4 | Other Vegetation 5 | Cropland 6 | Non-Vegetation</p>
+<p>Note that these raw land cover maps have the following categories:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Pixel Value</th>
+<th>Land Cover Categories</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>No Data</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Forest</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Mosaic Vegetation</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Shrubland</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Other Vegetation</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Cropland</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Non-Vegetation</td>
+</tr>
+</tbody>
+</table>
 <p>To prevent the subsequent cross-tabulation process using the <code>multicrosstab</code> function later on from including the ‘0’ or ‘No Data’ values, we need to set the ‘0’ pixel values to NA. First, we copy the original raster files into new variable objects:</p>
 <pre class="r"><code>lc1992 &lt;- r1992
 lc1997 &lt;- r1997
