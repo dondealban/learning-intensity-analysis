@@ -75,11 +75,11 @@ TIA.output <- TIA(crosstabulation, time.points, categories)
 # SAVE OUTPUT CSV FILES
 # ----------------------------------------
 setwd("/Users/dondealban/Dropbox/Research/learning-intensity-analysis/outputs/")
-IIAname <- file.path(normalizePath(getwd(), winslash = "/"), "IIA.csv")
+IIAname <- file.path(normalizePath(getwd()), "IIA.csv")
 IIA2csv(IIA.output, time.points, IIAname)
-CIAname <- file.path(normalizePath(getwd(), winslash = "/"), "CIA.csv")
+CIAname <- file.path(normalizePath(getwd()), "CIA.csv")
 CIA2csv(CIA.output, time.points, categories, CIAname)
-TIAname <- file.path(normalizePath(getwd(), winslash = "/"), "TIA.csv")
+TIAname <- file.path(normalizePath(getwd()), "TIA.csv")
 TIA2csv(TIA.output, time.points, categories, TIAname)
 
 
