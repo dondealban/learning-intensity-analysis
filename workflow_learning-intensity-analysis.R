@@ -57,7 +57,16 @@ categories <- c("Forest",
 # ----------------------------------------
 crosstabulation <- multicrosstab(raster.layers, time.points, categories)
 
+# ----------------------------------------
+# INTENSITY ANALYSIS
+# ----------------------------------------
 
+# Interval-level Intensity Analysis
+IIA.output <- IIA(crosstabulation, time.points)
 
+# Category-level Intensity Analysis
+CIA.output <- CIA(crosstabulation, time.points, categories)
 
+# Transition-level Intensity Analysis
+TIA.output <- TIA(crosstabulation, time.points, categories)
 
