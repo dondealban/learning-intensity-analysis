@@ -17,10 +17,43 @@ I implemented the following workflow for land cover change analysis using the In
 
 <a name="ingest"></a>
 ### A. Ingest
-The following R packages or libraries were used for this exercise: `intensity.analysis` and `raster`. To load these packages we can write:
+Prior to loading packages, you can set your working directory using `setwd()` and indicate your working directory path. The following R packages or libraries were used for this exercise: `intensity.analysis` and `raster`. To load these packages we can write:
 ```R
 library(raster)               # Package for geographic data analysis and modeling
 library(intensity.analysis)   # Package for intensity of change for comparing categorical maps from sequential intervals
+```
+### B. Load Rasters
+Next we load the raster datasets (our land cover maps) for each time-point and store them into variables using the `raster` function from the `raster` package.
+```R
+r1992 <- raster('Landscape_1992.tif')
+r1997 <- raster('Landscape_1997.tif')
+r2004 <- raster('Landscape_2004.tif')
+r2015 <- raster('Landscape_2015.tif')
+```
+Note that these raw land cover maps have the following categories:
+Pixel Value | Land Cover Categories
+----------- | ---------------------
+0           | No Data
+1           | Forest
+2           | Mosaic Vegetation
+3           | Shrubland
+4           | Other Vegetation
+5           | Cropland
+6           | Non-Vegetation
+
+To prevent the subsequent cross-tabulation process using the `multicrosstab` function later on from including the '0' or 'No Data' values, we need to set the '0' pixel values to NA. First, we copy the original raster files into new variable objects:
+```R
+lc1992 <- r1992
+lc1997 <- r1997
+lc2004 <- r2004
+lc2015 <- r2015
+```
+Subsequently, we assign 'NA' to the the '0' pixel values in the new raster variables to exclude these NA pixels from the calculations in Intensity Analysis.
+```R
+lc1992[lc1992 <= 0] <- NA
+lc1997[lc1997 <= 0] <- NA
+lc2004[lc2004 <= 0] <- NA
+lc2015[lc2015 <= 0] <- NA
 ```
 
 

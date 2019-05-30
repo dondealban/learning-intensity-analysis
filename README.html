@@ -126,13 +126,32 @@ $(document).ready(function () {
 <p><a name="intensity_analysis"></a> ## What is the Intensity Analysis framework? The <strong>Intensity Analysis</strong> framework is a quantitative method to analyse land cover change over time for an area of interest to summarise the change within time-intervals. Different types of information are extracted at three levels of analysis: interval, category, and transition, which progress from general to more detailed levels. At the <strong><em>interval level</em></strong>, the total change in each time-interval is analysed to examine how the size and annual rate of change vary across time-intervals (i.e., to answer in which time-intervals are the overall annual rate of change relatively slow or fast). At the <strong><em>category level</em></strong>, each land cover category is examined to measure how the size and intensity of both gross losses and gross gains vary across space (i.e., to answer which categories are relatively dormant versus active in a given time-interval, and to determine if the pattern is stable across time-intervals). Finally, at the <strong><em>transition level</em></strong>, a particular transition is analysed to examine how the size and intensity of the transition vary among categories available for that transition (i.e., to answer which transitions are intensively targeted versus avoided by a given land category in a given time-interval, and to determine if the pattern is stable across time-intervals).</p>
 <p><a name="dataset"></a> ## Dataset The dataset I used to illustrate the application of Intensity Analysis using the <code>intensity.analysis</code> package were extracted from the <a href="https://www.esa-landcover-cci.org">global 24-year annual time-series global land cover maps</a> developed by the European Space Agency Climate Change Initiative (ESA CCI). The land cover data covers the Tanintharyi Region in southern Myanmar, a region experiencing profound land cover changes as a result of political and economic transitions. The land cover change analysis involves studying changes over three time-intervals (1992–1997, 1997–2004, 2004–2015) at four time-points: 1992, 1997, 2004, 2015. (Note that in the land-cover regime shift <a href="https://doi.org/10.3390/su11041139">paper</a>, we analysed annual land cover change over 24 years from 1992–2015.) The land cover rasters are located in the <a href="https://github.com/dondealban/learning-intensity-analysis/tree/master/raster%20data">raster data folder</a> of this repository.</p>
 <p><a name="workflow"></a> ## An <code>intensity.analysis</code> Workflow Example I implemented the following workflow for land cover change analysis using the Intensity Analysis framework in R software. Users can modify this to suit their objectives.</p>
-<p><a name="ingest"></a> ### A. Ingest The following R packages or libraries were used for this exercise: <code>intensity.analysis</code> and <code>raster</code>. To load these packages we can write:</p>
+<p><a name="ingest"></a> ### A. Ingest Prior to loading packages, you can set your working directory using <code>setwd()</code> and indicate your working directory path. The following R packages or libraries were used for this exercise: <code>intensity.analysis</code> and <code>raster</code>. To load these packages we can write:</p>
 <pre class="r"><code>library(raster)               # Package for geographic data analysis and modeling
 library(intensity.analysis)   # Package for intensity of change for comparing categorical maps from sequential intervals</code></pre>
+<div id="b.-load-rasters" class="section level3">
+<h3>B. Load Rasters</h3>
+<p>Next we load the raster datasets (our land cover maps) for each time-point and store them into variables using the <code>raster</code> function from the <code>raster</code> package.</p>
+<pre class="r"><code>r1992 &lt;- raster('Landscape_1992.tif')
+r1997 &lt;- raster('Landscape_1997.tif')
+r2004 &lt;- raster('Landscape_2004.tif')
+r2015 &lt;- raster('Landscape_2015.tif')</code></pre>
+<p>Note that these raw land cover maps have the following categories: Pixel Value | Land Cover Categories ———– | ——————— 0 | No Data 1 | Forest 2 | Mosaic Vegetation 3 | Shrubland 4 | Other Vegetation 5 | Cropland 6 | Non-Vegetation</p>
+<p>To prevent the subsequent cross-tabulation process using the <code>multicrosstab</code> function later on from including the ‘0’ or ‘No Data’ values, we need to set the ‘0’ pixel values to NA. First, we copy the original raster files into new variable objects:</p>
+<pre class="r"><code>lc1992 &lt;- r1992
+lc1997 &lt;- r1997
+lc2004 &lt;- r2004
+lc2015 &lt;- r2015</code></pre>
+<p>Subsequently, we assign ‘NA’ to the the ‘0’ pixel values in the new raster variables to exclude these NA pixels from the calculations in Intensity Analysis.</p>
+<pre class="r"><code>lc1992[lc1992 &lt;= 0] &lt;- NA
+lc1997[lc1997 &lt;= 0] &lt;- NA
+lc2004[lc2004 &lt;= 0] &lt;- NA
+lc2015[lc2015 &lt;= 0] &lt;- NA</code></pre>
 <p><a name="references"></a> ## References</p>
 <p><a name="aldwaik_pontius_2012"></a> Aldwaik, S.Z., Pontius, R.G. (2012) Intensity analysis to unify measurements of size and stationarity of land changes by interval, category, and transition. <em>Landscape and Urban Planning</em>, 202, 18–27. <a href="https://doi.org/10.1016/j.landurbplan.2012.02.010">doi:10.1016/j.landurbplan.2012.02.010</a></p>
 <p><a name="dealban_etal_2019"></a> De Alban, J.D.T., Prescott, G.W., Woods, K.M., Jamaludin, J., Latt, K.T., Lim, C.L., Maung, A.C., Webb, E.L. (2019) Integrating analytical frameworks to investigate land-cover regime shifts in dynamic landscapes. <em>Sustainability</em>, 11(4), 1139. <a href="https://doi.org/10.3390/su11041139">doi:10.3390/su11041139</a></p>
 <p><a name="pontius_khallaghi_2019"></a> Pontius, R.G., Khallaghi, S. (2019) intensity.analysis: Intensity of Change for Comparing Categorical Maps from Sequential Intervals.</p>
+</div>
 </div>
 
 
