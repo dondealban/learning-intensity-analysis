@@ -12,7 +12,7 @@
 # ----------------------------------------
 # SET WORKING DIRECTORY
 # ----------------------------------------
-setwd("/Users/dondealban/Dropbox/Research/learning-intensity-analysis/raster data/")
+setwd("/Users/dondealban/Dropbox/Research/learning-intensity-analysis/")
 
 # ----------------------------------------
 # LOAD LIBRARIES
@@ -23,6 +23,7 @@ library(intensity.analysis)
 # ----------------------------------------
 # LOAD RASTER DATA
 # ----------------------------------------
+setwd("/Users/dondealban/Dropbox/Research/learning-intensity-analysis/raster data/")
 r1992 <- raster('Landscape_1992.tif')
 r1997 <- raster('Landscape_1997.tif')
 r2004 <- raster('Landscape_2004.tif')
@@ -69,4 +70,20 @@ CIA.output <- CIA(crosstabulation, time.points, categories)
 
 # Transition-level Intensity Analysis
 TIA.output <- TIA(crosstabulation, time.points, categories)
+
+# ----------------------------------------
+# SAVE OUTPUT CSV FILES
+# ----------------------------------------
+setwd("/Users/dondealban/Dropbox/Research/learning-intensity-analysis/outputs/")
+IIAname <- file.path(normalizePath(getwd(), winslash = "/"), "IIA.csv")
+IIA2csv(IIA.output, time.points, IIAname)
+CIAname <- file.path(normalizePath(getwd(), winslash = "/"), "CIA.csv")
+CIA2csv(CIA.output, time.points, categories, CIAname)
+TIAname <- file.path(normalizePath(getwd(), winslash = "/"), "TIA.csv")
+TIA2csv(TIA.output, time.points, categories, TIAname)
+
+
+# Tests
+crosstabulation[[1]] #1992-1997
+CIA.output[[1]] #1992-1997
 
