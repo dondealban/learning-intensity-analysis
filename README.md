@@ -76,12 +76,28 @@ raster.layers <- list(lc1992, lc1997, lc2004, lc2015)
 time.points <- c("1992","1997","2004","2015")
 
 # Create character vector of land cover categories
-categories <- c("Forest", "Mosaic Vegetation","Shrubland","Other Vegetation","Cropland","Non-Vegetation") 
+categories <- c("Forest","Mosaic Vegetation","Shrubland","Other Vegetation","Cropland","Non-Vegetation") 
 ```
 
 <a name="intensity_analysis"></a>
 
 ### D. Implement Intensity Analysis
+We generate multiple cross-tabulation matrices (or transition matrices) for each time-interval, 1992–1997, 1997–2004, 2004–2015. We accomplish this by calling the `multicrosstab` function and using the `raster.layers`, `time.points`, and `categories` lists/vectors that we created previously as the function's parameters: 
+```R
+crosstabulation <- multicrosstab(raster.layers, time.points, categories)
+```
+To calculate the three levels of Intensity Analysis, we can write the following:
+```R
+# Interval-level Intensity Analysis
+IIA.output <- IIA(crosstabulation, time.points)
+
+# Category-level Intensity Analysis
+CIA.output <- CIA(crosstabulation, time.points, categories)
+
+# Transition-level Intensity Analysis
+TIA.output <- TIA(crosstabulation, time.points, categories)
+```
+where **IIA**, **CIA**, and **TIA** refer to interval-level, category-level, and transition-level of Intensity Analysis, respectively.
 
 
 <a name="references"></a>

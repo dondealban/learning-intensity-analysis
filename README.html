@@ -213,11 +213,23 @@ raster.layers &lt;- list(lc1992, lc1997, lc2004, lc2015)
 time.points &lt;- c(&quot;1992&quot;,&quot;1997&quot;,&quot;2004&quot;,&quot;2015&quot;)
 
 # Create character vector of land cover categories
-categories &lt;- c(&quot;Forest&quot;, &quot;Mosaic Vegetation&quot;,&quot;Shrubland&quot;,&quot;Other Vegetation&quot;,&quot;Cropland&quot;,&quot;Non-Vegetation&quot;) </code></pre>
+categories &lt;- c(&quot;Forest&quot;,&quot;Mosaic Vegetation&quot;,&quot;Shrubland&quot;,&quot;Other Vegetation&quot;,&quot;Cropland&quot;,&quot;Non-Vegetation&quot;) </code></pre>
 <p><a name="intensity_analysis"></a></p>
 </div>
 <div id="d.-implement-intensity-analysis" class="section level3">
 <h3>D. Implement Intensity Analysis</h3>
+<p>We generate multiple cross-tabulation matrices (or transition matrices) for each time-interval, 1992–1997, 1997–2004, 2004–2015. We accomplish this by calling the <code>multicrosstab</code> function and using the <code>raster.layers</code>, <code>time.points</code>, and <code>categories</code> lists/vectors that we created previously as the function’s parameters:</p>
+<pre class="r"><code>crosstabulation &lt;- multicrosstab(raster.layers, time.points, categories)</code></pre>
+<p>To calculate the three levels of Intensity Analysis, we can write the following:</p>
+<pre class="r"><code># Interval-level Intensity Analysis
+IIA.output &lt;- IIA(crosstabulation, time.points)
+
+# Category-level Intensity Analysis
+CIA.output &lt;- CIA(crosstabulation, time.points, categories)
+
+# Transition-level Intensity Analysis
+TIA.output &lt;- TIA(crosstabulation, time.points, categories)</code></pre>
+<p>where <strong>IIA</strong>, <strong>CIA</strong>, and <strong>TIA</strong> refer to interval-level, category-level, and transition-level of Intensity Analysis, respectively.</p>
 <p><a name="references"></a></p>
 </div>
 </div>
