@@ -3,25 +3,32 @@ This is a repository set up as my personal exercise for learning the Intensity A
 
 Previously, I implemented the Intensity Analysis framework for my land change studies using the [Microsoft Excel Macro](https://sites.google.com/site/intensityanalysis/home) developed by Aldwaik & Pontius. The recent development of the `intensity.analysis` R package now allows for the implementation of the framework within the R environment, which makes the application and implementation of the framework more repeatable, transparent, and reproducible. (And in my opinion is truly *magnificent, magnificent, magnificent*! Hence thanks and kudos to Prof Pontius and his collaborators.) This repository is thus my first attempt to learn and my record of learning the Intensity Analysis framework implementation using R software using dataset from one of my land cover change studies (see [De Alban et al 2019](https://doi.org/10.3390/su11041139) published in Sustainability journal and its accompanying GitHub [repository](https://github.com/dondealban/ms-sustainability-2019)).
 
-<a name="intensity_analysis"></a>
+<a name="what_is_intensity_analysis"></a>
+
 ## What is the Intensity Analysis framework?
 The **Intensity Analysis** framework is a quantitative method to analyse land cover change over time for an area of interest to summarise the change within time-intervals. Different types of information are extracted at three levels of analysis: interval, category, and transition, which progress from general to more detailed levels. At the ***interval level***, the total change in each time-interval is analysed to examine how the size and annual rate of change vary across time-intervals (i.e., to answer in which time-intervals are the overall annual rate of change relatively slow or fast). At the ***category level***, each land cover category is examined to measure how the size and intensity of both gross losses and gross gains vary across space (i.e., to answer which categories are relatively dormant versus active in a given time-interval, and to determine if the pattern is stable across time-intervals). Finally, at the ***transition level***, a particular transition is analysed to examine how the size and intensity of the transition vary among categories available for that transition (i.e., to answer which transitions are intensively targeted versus avoided by a given land category in a given time-interval, and to determine if the pattern is stable across time-intervals).
 
 <a name="dataset"></a>
+
 ## Dataset
 The dataset I used to illustrate the application of Intensity Analysis using the `intensity.analysis` package were extracted from the [global 24-year annual time-series global land cover maps](https://www.esa-landcover-cci.org) developed by the European Space Agency Climate Change Initiative (ESA CCI). The land cover data covers the Tanintharyi Region in southern Myanmar, a region experiencing profound land cover changes as a result of political and economic transitions. The land cover change analysis involves studying changes over three time-intervals (1992–1997, 1997–2004, 2004–2015) at four time-points: 1992, 1997, 2004, 2015. (Note that in the land-cover regime shift [paper](https://doi.org/10.3390/su11041139), we analysed annual land cover change over 24 years from 1992–2015.) The land cover rasters are located in the [raster data folder](https://github.com/dondealban/learning-intensity-analysis/tree/master/raster%20data) of this repository.
 
 <a name="workflow"></a>
+
 ## An `intensity.analysis` Workflow Example
 I implemented the following workflow for land cover change analysis using the Intensity Analysis framework in R software. Users can modify this to suit their objectives.
 
 <a name="ingest"></a>
+
 ### A. Ingest
 Prior to loading packages, you can set your working directory using `setwd()` and indicate your working directory path. The following R packages or libraries were used for this exercise: `intensity.analysis` and `raster`. To load these packages we can write:
 ```R
 library(raster)               # Package for geographic data analysis and modeling
 library(intensity.analysis)   # Package for intensity of change for comparing categorical maps from sequential intervals
 ```
+
+<a name="load_rasters"></a>
+
 ### B. Load Rasters
 Next we load the raster datasets (our land cover maps) for each time-point and store them into variables using the `raster` function from the `raster` package.
 ```R
@@ -42,14 +49,14 @@ Pixel Value | Land Cover Categories
 5           | Cropland
 6           | Non-Vegetation
 
-To prevent the subsequent cross-tabulation process using the `multicrosstab` function later on from including the '0' or 'No Data' values, we need to set the '0' pixel values to NA. First, we copy the original raster files into new variable objects:
+To prevent the cross-tabulation process using the `multicrosstab` function later on from including the '0' or 'No Data' values, we need to set the '0' pixel values to NA. First, we copy the original raster files into new variable objects:
 ```R
 lc1992 <- r1992
 lc1997 <- r1997
 lc2004 <- r2004
 lc2015 <- r2015
 ```
-Subsequently, we assign 'NA' to the the '0' pixel values in the new raster variables to exclude these NA pixels from the calculations in Intensity Analysis.
+Then, we assign 'NA' to the the '0' pixel values in the new raster variables to exclude these NA pixels from the calculations in Intensity Analysis.
 ```R
 lc1992[lc1992 <= 0] <- NA
 lc1997[lc1997 <= 0] <- NA
@@ -57,8 +64,28 @@ lc2004[lc2004 <= 0] <- NA
 lc2015[lc2015 <= 0] <- NA
 ```
 
+<a name="create_lists_vectors"></a>
+
+### C. Create Lists and Vectors
+We then create lists and vectors required by the `multicrosstab` function in `intensity.analysis` to calculate the cross-tabulation matrices for each time-interval. First, we create a list of the raster data from the previous step. Second, we create a character vector of time-points including all four years: 1992, 1997, 2004, and 2015. Finally, we create a character vector of land cover categories listed in the particular order shown in the table above. 
+```R
+# Create a list of raster data
+raster.layers <- list(lc1992, lc1997, lc2004, lc2015) 
+
+# Create character vector of time-points
+time.points <- c("1992","1997","2004","2015")
+
+# Create character vector of land cover categories
+categories <- c("Forest", "Mosaic Vegetation","Shrubland","Other Vegetation","Cropland","Non-Vegetation") 
+```
+
+<a name="intensity_analysis"></a>
+
+### D. Implement Intensity Analysis
+
 
 <a name="references"></a>
+
 ## References
 
 <a name="aldwaik_pontius_2012"></a>
