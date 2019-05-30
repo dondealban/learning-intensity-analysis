@@ -11,6 +11,19 @@ The **Intensity Analysis** framework is a quantitative method to analyse land co
 ## Dataset
 The dataset I used to illustrate the application of Intensity Analysis using the `intensity.analysis` package were extracted from the [global 24-year annual time-series global land cover maps](https://www.esa-landcover-cci.org) developed by the European Space Agency Climate Change Initiative (ESA CCI). The land cover data covers the Tanintharyi Region in southern Myanmar, a region experiencing profound land cover changes as a result of political and economic transitions. The land cover change analysis involves studying changes over three time-intervals (1992–1997, 1997–2004, 2004–2015) at four time-points: 1992, 1997, 2004, 2015. (Note that in the land-cover regime shift [paper](https://doi.org/10.3390/su11041139), we analysed annual land cover change over 24 years from 1992–2015.) The land cover rasters are located in the [raster data folder](https://github.com/dondealban/learning-intensity-analysis/tree/master/raster%20data) of this repository.
 
+<a name="workflow"></a>
+## An `intensity.analysis` Workflow Example
+I implemented the following workflow for land cover change analysis using the Intensity Analysis framework in R software. Users can modify this to suit their objectives.
+
+<a name="ingest"></a>
+### A. Ingest
+The following R packages or libraries were used for this exercise: `intensity.analysis` and `raster`. To load these packages we can write:
+```R
+library(raster)               # Package for geographic data analysis and modeling
+library(intensity.analysis)   # Package for intensity of change for comparing categorical maps from sequential intervals
+```
+
+
 <a name="references"></a>
 ## References
 
