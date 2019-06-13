@@ -132,17 +132,17 @@ The result of the interval-level intensity analysis shows the following plots. T
 
 ###### (a) Category-level intensity analysis for 1992–1997 time-interval
 
-| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA1.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA2.png" width="400" /> |
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA1.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA2.png" width="500" /> |
 |:---:|:---:|
 
-For the 1992–1997 interval, we see from the left plot that annual loss was high for Forest, and annual gains were high for Shrubland, Mosaic Vegetation, and Cropland.
+For the 1992–1997 interval, we see from the left plot that annual loss was high for Forest, and annual gains were high for Shrubland, Mosaic Vegetation, and Cropland. Then, for the plot on the right, we see that the annual loss change intensities were beyond the uniform intensity (blue vertical dashed line) for Other Vegetation and Forest, indicating that these were actively losing categories during the time-interval, whereas the annual gain change intensities of Shrubland, Non-Vegetation, Cropland, and Mosaic Vegetation were beyond the uniform intensity, indicating that these were actively gaining categories during the time-interval.
 
-Then, for the plot on the right, we see that the annual loss change intensities were beyond the uniform intensity (blue vertical dashed line) for Other Vegetation and Forest, indicating that these were actively losing categories during the time-interval, whereas the annual gain change intensities of Shrubland, Non-Vegetation, Cropland, and Mosaic Vegetation were beyond the uniform intensity, indicating that these were actively gaining categories during the time-interval.
-
-###### (b) Category-level intensity analysis for 1992–1997 time-interval
+###### (b) Category-level intensity analysis for 1997–2004 time-interval
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA3.png" width="450" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA4.png" width="450" /> |
 |:---:|:---:|
+
+For the 1997–2004 interval, we see from the left plot that annual loss was high for Forest, and annual gains were high for Shrubland, Mosaic Vegetation, and Cropland. Note that the annual loss in terms of pixels for Forest during this time-interval (close to 10000 pixels) is higher than the annual loss in terms of pixels for Forest during the 1992–1997 time-interval. Then, for the plot on the right, we see that the annual loss change intensities were beyond the uniform intensity (blue vertical dashed line) for Forest only, indicating that it was an actively losing category during the time-interval, whereas the annual gain change intensities of Shrubland, Mosaic Vegetation, and Other Vegetation were beyond the uniform intensity, indicating that these were actively gaining categories during the time-interval.
 
 ###### (c) Category-level intensity analysis for 2004–2015 time-interval
 
