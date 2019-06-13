@@ -221,7 +221,7 @@ Finally, the plots below show the gain of Cropland primarily from the losses of 
 <a name="save_outputs"></a>
 
 ### F. Save Outputs
-We can save the outputs of the Intensity Analysis as CSV files as show in the `intensity.analysis` package [vignette](https://cran.r-project.org/web/packages/intensity.analysis/vignettes/README.html):
+We can save the outputs of the Intensity Analysis as CSV files as shown in the `intensity.analysis` package [vignette](https://cran.r-project.org/web/packages/intensity.analysis/vignettes/README.html). We can write the following lines:
 ```R
 # Interval-level Intensity Analysis
 IIAname <- file.path(normalizePath(getwd()), "IIA.csv")
@@ -235,8 +235,17 @@ CIA2csv(CIA.output, time.points, categories, CIAname)
 TIAname <- file.path(normalizePath(getwd()), "TIA.csv")
 TIA2csv(TIA.output, time.points, categories, TIAname)
 ```
+The above commands saves the results of the three levels of the Intensity Analysis framework. We can also save the cross-tabulation matrices for each of the three time-intervals as follows:
+```R
+crosstab_1 <- crosstabulation[[1]] #1992-1997
+write.csv(crosstab_1, "CrossTab_I1.csv")
 
+crosstab_2 <- crosstabulation[[2]] #1997-2004
+write.csv(crosstab_2, "CrossTab_I2.csv")
 
+crosstab_3 <- crosstabulation[[3]] #2004-2015
+write.csv(crosstab_3, "CrossTab_I3.csv")
+```
 <a name="references"></a>
 
 ## References
