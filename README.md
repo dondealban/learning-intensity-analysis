@@ -108,16 +108,16 @@ crosstabulation[[3]]
 ```
 This will show the following cross-tabulation matrix:
 
-2004–2015         | Forest  | Mosaic Vegetation | Shrubland | Other Vegetation | Cropland | Non-Vegetation
------------------ | ------- | ----------------- | --------- | ---------------- | -------- | ---------------
-Forest            |  283838 |              2816 |      4212 |               24 |      599 |              3
-Mosaic Vegetation |     200 |             40181 |        59 |                0 |        0 |             14
-Shrubland         |     783 |               335 |    104849 |                0 |      532 |              0
-Other Vegetation  |       2 |                 6 |         0 |             1088 |        0 |              7
-Cropland          |      65 |                12 |        27 |                0 |    23877 |             60
-Non-Vegetation    |      66 |                 1 |         2 |                1 |        5 |           9658
+2004–2015  | FOR    | MOS   | SHB    | OTH  | CRP   | NON
+---------- | ------ | ----- | ------ | ---- | ----- | -----
+FOR        | 283838 |  2816 |   4212 |   24 |   599 |    3
+MOS        |    200 | 40181 |     59 |    0 |     0 |   14
+SHB        |    783 |   335 | 104849 |    0 |   532 |    0
+OTH        |      2 |     6 |      0 | 1088 |     0 |    7
+CRP        |     65 |    12 |     27 |    0 | 23877 |   60
+NON        |     66 |     1 |      2 |    1 |     5 | 9658
 
-
+Note: FOR is Forest, MOS is Mosaic Vegetation, SHB is Shrubland, OTH is Other Vegetation, CRP is Cropland, and NON is Non-Vegetation.
 
 
 <a name="save_outputs"></a>
