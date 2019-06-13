@@ -262,4 +262,4 @@ Pontius, R.G., Khallaghi, S. (2019) intensity.analysis: Intensity of Change for 
 <a name="contribute"></a>
 
 ## Want to Contribute?
-In case you wish to contribute or suggest changes, please feel free to fork this repository. Commit your changes and submit a pull request. Thanks.
+In case you wish to contribute or suggest changes/improvements, please feel free to fork this repository. Commit your changes and submit a pull request. Thanks.
