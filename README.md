@@ -164,6 +164,26 @@ For the 1997–2004 interval, we see from the left plot that annual loss was hig
 
 For the 2004–2015 interval, we see from the left plot that annual loss was high for Forest, and annual gains were high for Shrubland, Mosaic Vegetation, Cropland, and Forest. Note that the annual loss in terms of pixels for Forest during this time-interval was less than the annual loss in terms of pixels for Forest during the two prior time-intervals. Then, for the plot on the right, we see that the annual loss change intensities were beyond the uniform intensity (blue vertical dashed line) for Forest only, indicating that it was an actively losing category during the time-interval, whereas the annual gain change intensities of Mosaic Vegetation, Cropland, Shrubland, and Other Vegetation were beyond the uniform intensity, indicating that these were actively gaining categories during the time-interval.
 
+#### Transition-level intensity analysis
+The result of the transition-level intensity analysis shows the following plots, specifically for the transitions of Forest (i.e., From Forest, To Forest) for each time-interval. The output plots for the other land cover categories are found in the [outputs](https://github.com/dondealban/learning-intensity-analysis/tree/master/outputs) folder of this repository.
+
+ The plots on the left shows the annual change size in terms of number of elements/pixels for each land cover category during a specific time-interval where the red bars indicate annual loss and the green bars indicate annual gain for a specific category. On the other hand, the plots on the right shows the annual change intensity by category (as a % of the category) during a specific time-interval where the light red bars indicate annual loss for the category while the light green bars indicate annual gain intensity for the category.
+
+ | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_1.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_2.png" width="500" /> |
+ |:---:|:---:|
+
+
+
+ | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_1.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_2.png" width="500" /> |
+ |:---:|:---:|
+
+
+
+ | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_1.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_2.png" width="500" /> |
+ |:---:|:---:|
+
+
+
 <a name="save_outputs"></a>
 
 ### F. Save Outputs
