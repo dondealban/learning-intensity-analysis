@@ -102,6 +102,8 @@ where **IIA**, **CIA**, and **TIA** refer to interval-level, category-level, and
 <a name="view_outputs"></a>
 
 ### E. View Outputs
+
+###### Cross-tabulation matrices
 The `crosstabulation` variable contains the cross-tabulation matrices for each of the three time-intervals, 1992–1997, 1997–2004, 2004–2015, which are stored inside three elements [[1]], [[2]], and [[3]] of the variable, respectively. To view the cross-tabulation matrices, we can write `crosstabulation` to print the multiple cross-tabulation matrices that were calculated for each time-interval. We can also display the cross-tabulation matrix of a specific time-interval 2004–2015 using the following:
 ```R
 crosstabulation[[3]]
@@ -117,7 +119,14 @@ OTH        |      2 |     6 |      0 | 1088 |     0 |    7
 CRP        |     65 |    12 |     27 |    0 | 23877 |   60
 NON        |     66 |     1 |      2 |    1 |     5 | 9658
 
-Note: FOR is Forest, MOS is Mosaic Vegetation, SHB is Shrubland, OTH is Other Vegetation, CRP is Cropland, and NON is Non-Vegetation.
+where **FOR** is Forest, **MOS** is Mosaic Vegetation, **SHB** is Shrubland, **OTH** is Other Vegetation, **CRP** is Cropland, and **NON** is Non-Vegetation.
+
+##### Interval-level intensity analysis
+The result of the interval-level intensity analysis show the following two plots:
+
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/IIA1.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/IIA2.png" width="400" /> |
+|:---:|:---:|
+
 
 
 <a name="save_outputs"></a>
