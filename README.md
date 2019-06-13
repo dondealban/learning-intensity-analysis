@@ -122,20 +122,21 @@ NON        |     66 |     1 |      2 |    1 |     5 | 9658
 where **FOR** is Forest, **MOS** is Mosaic Vegetation, **SHB** is Shrubland, **OTH** is Other Vegetation, **CRP** is Cropland, and **NON** is Non-Vegetation.
 
 #### Interval-level intensity analysis
-The result of the interval-level intensity analysis shows the following two plots. On the left, the plot shows the amount of change pixels (as a % of the domain or study area) for each of the three time-intervals; on the right, the plot shows the annual change intensity (as a % of the domain or study area) for each of the three time-intervals. Note that for the annual change intensity plot, the annual change intensity of the 1997–2004 interval is beyond the uniform intensity (depicted by the blue vertical dashed line), indicating that the annual change during this interval is faster compared to the two other time-intervals, 1992–1997 and 2004–2015, over the entire 24-year period.
+The result of the interval-level intensity analysis shows the following two plots. On the left, the plot shows the amount of change elements/pixels (as a % of the domain or study area) for each of the three time-intervals; on the right, the plot shows the annual change intensity (as a % of the domain or study area) for each of the three time-intervals. Note that for the annual change intensity plot, the annual change intensity of the 1997–2004 interval is beyond the uniform intensity (depicted by the blue vertical dashed line), indicating that the annual change during this interval is faster compared to the two other time-intervals, 1992–1997 and 2004–2015, over the entire 24-year period.
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/IIA1.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/IIA2.png" width="400" /> |
 |:---:|:---:|
 
 #### Category-level intensity analysis
-The result of the interval-level intensity analysis shows the following plots.
+The result of the interval-level intensity analysis shows the following plots. The plots on the left shows the annual change size in terms of number of elements/pixels for each land cover category during a specific time-interval. The red bars indicate annual loss and the green bars indicate annual gain for a specific category. On the other hand, the plots on the right shows the annual change intensity by category (as a % of the category) during a specific time-interval. The light red bars indicate annual loss for the category while the light green bars indicate annual gain intensity for the category.
 
-Time-interval 1992–1997
-| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA1.png" width="350" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA2.png" width="350" /> |
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA1.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA2.png" width="400" /> |
 |:---:|:---:|
 
-
+For the 1992–1997 time-interval,
 Time-interval 1997–2004
+
+
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA3.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA4.png" width="400" /> |
 |:---:|:---:|
 
