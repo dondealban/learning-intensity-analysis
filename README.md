@@ -86,13 +86,6 @@ We generate multiple cross-tabulation matrices (or transition matrices) for each
 ```R
 crosstabulation <- multicrosstab(raster.layers, time.points, categories)
 ```
-The `crosstabulation` variable contains the cross-tabulation matrices for each of the three time-intervals, 1992–1997, 1997–2004, 2004–2015, which are stored inside three elements [[1]], [[2]], and [[3]] of the variable, respectively. We can display the cross-tabulation matrix of time-interval 2004–2015 using the following:
-```R
-crosstabulation[[3]]
-```
-
-
-
 To calculate the three levels of Intensity Analysis, we can write the following:
 ```R
 # Interval-level Intensity Analysis
@@ -109,10 +102,23 @@ where **IIA**, **CIA**, and **TIA** refer to interval-level, category-level, and
 <a name="view_outputs"></a>
 
 ### E. View Outputs
-To view the cross-tabulation matrices, we can write `crosstabulation` to print the multiple cross-tabulation matrices that were calculated for each time-interval. An alte
+The `crosstabulation` variable contains the cross-tabulation matrices for each of the three time-intervals, 1992–1997, 1997–2004, 2004–2015, which are stored inside three elements [[1]], [[2]], and [[3]] of the variable, respectively. To view the cross-tabulation matrices, we can write `crosstabulation` to print the multiple cross-tabulation matrices that were calculated for each time-interval. We can also display the cross-tabulation matrix of a specific time-interval 2004–2015 using the following:
 ```R
-crosstabulation[[1]]
+crosstabulation[[3]]
 ```
+This will show the following cross-tabulation matrix:
+
+                  | Forest  | Mosaic Vegetation | Shrubland | Other Vegetation | Cropland | Non-Vegetation
+----------------- | ------- | ----------------- | --------- | ---------------- | -------- | --------------
+Forest            |  283838 |              2816 |      4212 |               24 |      599 |              3
+Mosaic Vegetation |     200 |             40181 |        59 |                0 |        0 |             14
+Shrubland         |     783 |               335 |    104849 |                0 |      532 |              0
+Other Vegetation  |       2 |                 6 |         0 |             1088 |        0 |              7
+Cropland          |      65 |                12 |        27 |                0 |    23877 |             60
+Non-Vegetation    |      66 |                 1 |         2 |                1 |        5 |           9658
+
+
+
 
 <a name="save_outputs"></a>
 
