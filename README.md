@@ -173,7 +173,9 @@ The result of the transition-level intensity analysis shows the following plots,
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_6.png" width="500" /> |
 |:---:|:---:|
+
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_4.png" width="500" /> |
+|:---:|:---:|
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_9.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_10.png" width="500" /> |
 |:---:|:---:|
@@ -184,8 +186,12 @@ For the 1992–1997 interval,
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_6.png" width="500" /> |
 |:---:|:---:|
+
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_4.png" width="500" /> |
+|:---:|:---:|
+
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_7.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_8.png" width="500" /> |
+|:---:|:---:|
 
 
 
@@ -193,8 +199,12 @@ For the 1992–1997 interval,
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_6.png" width="500" /> |
 |:---:|:---:|
+
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_4.png" width="500" /> |
+|:---:|:---:|
+
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_9.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_10.png" width="500" /> |
+|:---:|:---:|
 
 
 
