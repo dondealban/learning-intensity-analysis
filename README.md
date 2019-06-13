@@ -186,20 +186,24 @@ Finally, the plots below show the gain of Cropland most prominently from the los
 
 ###### (b) Transition-level intensity analysis for 1997–2004 time-interval
 
-During the 1997–2004 interval, Forest lost to Shrubland, Mosaic Vegetation, and Other Vegetation. The plots below show the gain of Shrubland most prominently from Forest during the time-interval. The transition size of Forest loss is shown as having the highest number of pixels/elements contributing to the gain of Shrubland. The gain of Shrubland is also targeted by the loss of Forest as shown by the light blue bar beyond the uniform intensity (red vertical dashed line).
+During the 1997–2004 interval, Forest lost to Shrubland, Mosaic Vegetation, and Other Vegetation. The plots below show the gain of Shrubland most prominently from Forest during the time-interval. The transition size of Forest loss is shown as having the highest number of pixels/elements contributing to the gain of Shrubland. The gain of Shrubland is also targeted by the loss of Forest as shown by the light blue bar beyond the uniform intensity.
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_6.png" width="500" /> |
 |:---:|:---:|
 
+Next, the plots below show the gain of Mosaic Vegetation most prominently from the loss of Forest during the time-interval. We see the transition size of Forest loss having the highest number of pixels/elements contributing to the gain of Mosaic Vegetation. The gain of Mosaic Vegetation is also targeted by the loss of Forest as shown by the light blue bar beyond the uniform intensity, whereas the gain of Mosaic Vegetation is avoided by the loss of other land cover categories.
+
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_4.png" width="500" /> |
 |:---:|:---:|
+
+Finally, the plots below show the gain of Other Vegetation comes mainly from the loss of Forest and followed by Shrubland during the time-interval. We see the transition size of Forest loss having the highest number of pixels/elements contributing to the gain of Other Vegetation. The gain of Other Vegetation is also targeted by both the loss of Forest and Shrubland as shown by the light blue bar beyond the uniform intensity, whereas the gain of Other Vegetation is avoided by the loss of Cropland.
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_7.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_8.png" width="500" /> |
 |:---:|:---:|
 
-
-
 ###### (c) Transition-level intensity analysis for 2004–2015 time-interval
+
+During the 2004–2015 interval, Forest lost to Shrubland, Mosaic Vegetation, and Cropland. The plots below show the gain of Shrubland most prominently from Forest during the time-interval, with the transition size of Forest loss having the highest number of pixels/elements contributing to the gain of Shrubland. The gain of Shrubland is also targeted by the loss of Forest as shown by the light blue bar beyond the uniform intensity.
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_6.png" width="500" /> |
 |:---:|:---:|
