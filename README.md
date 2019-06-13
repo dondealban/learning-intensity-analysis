@@ -208,10 +208,12 @@ During the 2004–2015 interval, Forest lost to Shrubland, Mosaic Vegetation, an
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_6.png" width="500" /> |
 |:---:|:---:|
 
-| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_4.png" width="500" /> |
+Next, the plots below show the gain of Mosaic Vegetation primarily from the loss of Forest during the time-interval. We see the transition size of Forest loss having the highest number of pixels/elements contributing to the gain of Mosaic Vegetation. The gain of Mosaic Vegetation is also targeted by the loss of Forest as shown by the light blue bar beyond the uniform intensity.
+
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_4.png" width="500" /> |
 |:---:|:---:|
 
-| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_9.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_10.png" width="500" /> |
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_9.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_10.png" width="500" /> |
 |:---:|:---:|
 
 
