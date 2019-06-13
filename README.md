@@ -130,17 +130,17 @@ The result of the interval-level intensity analysis shows the following two plot
 #### Category-level intensity analysis
 The result of the interval-level intensity analysis shows the following plots.
 
-1992–1997
-| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA1.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA2.png" width="400" /> |
+Time-interval 1992–1997
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA1.png" width="350" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA2.png" width="350" /> |
 |:---:|:---:|
 
 
-1997–2004
+Time-interval 1997–2004
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA3.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA4.png" width="400" /> |
 |:---:|:---:|
 
 
-2004–2015
+Time-interval 2004–2015
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA5.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA6.png" width="400" /> |
 |:---:|:---:|
 
