@@ -128,7 +128,7 @@ The result of the interval-level intensity analysis shows the following two plot
 |:---:|:---:|
 
 #### Category-level intensity analysis
-The result of the interval-level intensity analysis shows the following plots. The plots on the left shows the annual change size in terms of number of elements/pixels for each land cover category during a specific time-interval. The red bars indicate annual loss and the green bars indicate annual gain for a specific category. On the other hand, the plots on the right shows the annual change intensity by category (as a % of the category) during a specific time-interval. The light red bars indicate annual loss for the category while the light green bars indicate annual gain intensity for the category.
+The result of the category-level intensity analysis shows the following plots. The plots on the left shows the annual change size in terms of number of elements/pixels for each land cover category during a specific time-interval where the red bars indicate annual loss and the green bars indicate annual gain for a specific category. On the other hand, the plots on the right shows the annual change intensity by category (as a % of the category) during a specific time-interval where the light red bars indicate annual loss for the category while the light green bars indicate annual gain intensity for the category.
 
 ###### (a) Category-level intensity analysis for 1992–1997 time-interval
 
@@ -142,13 +142,14 @@ For the 1992–1997 interval, we see from the left plot that annual loss was hig
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA4.png" width="500" /> |
 |:---:|:---:|
 
-For the 1997–2004 interval, we see from the left plot that annual loss was high for Forest, and annual gains were high for Shrubland, Mosaic Vegetation, and Cropland. Note that the annual loss in terms of pixels for Forest during this time-interval (close to 10000 pixels) is higher than the annual loss in terms of pixels for Forest during the 1992–1997 time-interval. Then, for the plot on the right, we see that the annual loss change intensities were beyond the uniform intensity (blue vertical dashed line) for Forest only, indicating that it was an actively losing category during the time-interval, whereas the annual gain change intensities of Shrubland, Mosaic Vegetation, and Other Vegetation were beyond the uniform intensity, indicating that these were actively gaining categories during the time-interval.
+For the 1997–2004 interval, we see from the left plot that annual loss was high for Forest, and annual gains were high for Shrubland, Mosaic Vegetation, and Cropland. Note that the annual loss in terms of pixels for Forest during this time-interval (close to 10000 pixels) is higher than the annual loss in terms of pixels for Forest during the 1992–1997 time-interval (close to 1000 pixels only). Then, for the plot on the right, we see that the annual loss change intensities were beyond the uniform intensity (blue vertical dashed line) for Forest only, indicating that it was an actively losing category during the time-interval, whereas the annual gain change intensities of Shrubland, Mosaic Vegetation, and Other Vegetation were beyond the uniform intensity, indicating that these were actively gaining categories during the time-interval.
 
 ###### (c) Category-level intensity analysis for 2004–2015 time-interval
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA6.png" width="500" /> |
 |:---:|:---:|
 
+For the 2004–2015 interval, we see from the left plot that annual loss was high for Forest, and annual gains were high for Shrubland, Mosaic Vegetation, Cropland, and Forest. Note that the annual loss in terms of pixels for Forest during this time-interval was less than the annual loss in terms of pixels for Forest during the two prior time-intervals. Then, for the plot on the right, we see that the annual loss change intensities were beyond the uniform intensity (blue vertical dashed line) for Forest only, indicating that it was an actively losing category during the time-interval, whereas the annual gain change intensities of Mosaic Vegetation, Cropland, Shrubland, and Other Vegetation were beyond the uniform intensity, indicating that these were actively gaining categories during the time-interval.
 
 <a name="save_outputs"></a>
 
