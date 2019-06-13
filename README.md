@@ -172,9 +172,7 @@ The plots on the left shows the annual transition size in terms of number of ele
 Time interval 1992–1997
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_6.png" width="500" /> |
-|:---:|:---:|
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_4.png" width="500" /> |
-|:---:|:---:|
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_9.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_10.png" width="500" /> |
 |:---:|:---:|
 
