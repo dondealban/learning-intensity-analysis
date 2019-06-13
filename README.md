@@ -108,8 +108,8 @@ crosstabulation[[3]]
 ```
 This will show the following cross-tabulation matrix:
 
-                  | Forest  | Mosaic Vegetation | Shrubland | Other Vegetation | Cropland | Non-Vegetation
------------------ | ------- | ----------------- | --------- | ---------------- | -------- | --------------
+2004–2015         | Forest  | Mosaic Vegetation | Shrubland | Other Vegetation | Cropland | Non-Vegetation
+----------------- | ------- | ----------------- | --------- | ---------------- | -------- | ---------------
 Forest            |  283838 |              2816 |      4212 |               24 |      599 |              3
 Mosaic Vegetation |     200 |             40181 |        59 |                0 |        0 |             14
 Shrubland         |     783 |               335 |    104849 |                0 |      532 |              0
