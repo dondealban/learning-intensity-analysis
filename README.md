@@ -121,8 +121,8 @@ NON        |     66 |     1 |      2 |    1 |     5 | 9658
 
 where **FOR** is Forest, **MOS** is Mosaic Vegetation, **SHB** is Shrubland, **OTH** is Other Vegetation, **CRP** is Cropland, and **NON** is Non-Vegetation.
 
-##### Interval-level intensity analysis
-The result of the interval-level intensity analysis show the following two plots:
+#### Interval-level intensity analysis
+The result of the interval-level intensity analysis shows the following two plots. On the left, the plot shows the amount of change pixels (as a % of the domain or study area) for each of the three time-intervals; on the right, the plot shows the annual change intensity (as a % of the domain or study area) for each of the three time-intervals. Note that for the annual change intensity plot, the annual change intensity of the 1997–2004 interval is beyond the uniform intensity (depicted by the blue vertical dashed line), indicating that the annual change during this interval is faster compared to the two other time-intervals, 1992–1997 and 2004–2015, over the entire 24-year period.
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/IIA1.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/IIA2.png" width="400" /> |
 |:---:|:---:|
