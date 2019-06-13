@@ -82,8 +82,10 @@ CIA2csv(CIA.output, time.points, categories, CIAname)
 TIAname <- file.path(normalizePath(getwd()), "TIA.csv")
 TIA2csv(TIA.output, time.points, categories, TIAname)
 
-
-# Tests
-crosstabulation[[1]] #1992-1997
-CIA.output[[1]] #1992-1997
-
+# Save the cross-tabulation matrices
+crosstab_1 <- crosstabulation[[1]] #1992-1997
+write.csv(crosstab_1, "CrossTab_I1.csv")
+crosstab_2 <- crosstabulation[[2]] #1997-2004
+write.csv(crosstab_2, "CrossTab_I2.csv")
+crosstab_3 <- crosstabulation[[3]] #2004-2015
+write.csv(crosstab_3, "CrossTab_I3.csv")
