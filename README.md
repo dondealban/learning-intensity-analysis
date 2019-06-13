@@ -103,7 +103,7 @@ where **IIA**, **CIA**, and **TIA** refer to interval-level, category-level, and
 
 ### E. View Outputs
 
-###### Cross-tabulation matrices
+#### Cross-tabulation matrices
 The `crosstabulation` variable contains the cross-tabulation matrices for each of the three time-intervals, 1992–1997, 1997–2004, 2004–2015, which are stored inside three elements [[1]], [[2]], and [[3]] of the variable, respectively. To view the cross-tabulation matrices, we can write `crosstabulation` to print the multiple cross-tabulation matrices that were calculated for each time-interval. We can also display the cross-tabulation matrix of a specific time-interval 2004–2015 using the following:
 ```R
 crosstabulation[[3]]
@@ -127,6 +127,22 @@ The result of the interval-level intensity analysis shows the following two plot
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/IIA1.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/IIA2.png" width="400" /> |
 |:---:|:---:|
 
+#### Category-level intensity analysis
+The result of the interval-level intensity analysis shows the following plots.
+
+1992–1997
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA1.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA2.png" width="400" /> |
+|:---:|:---:|
+
+
+1997–2004
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA3.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA4.png" width="400" /> |
+|:---:|:---:|
+
+
+2004–2015
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA5.png" width="400" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA6.png" width="400" /> |
+|:---:|:---:|
 
 
 <a name="save_outputs"></a>
