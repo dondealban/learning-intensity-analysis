@@ -3,6 +3,19 @@ This is a repository set up as my personal exercise for learning the Intensity A
 
 Previously, I implemented the Intensity Analysis framework for my land change studies using the [Microsoft Excel Macro](https://sites.google.com/site/intensityanalysis/home) developed by Aldwaik & Pontius. The recent development of the `intensity.analysis` R package now allows for the implementation of the framework within the R environment, which makes the application and implementation of the framework more repeatable, transparent, and reproducible. (And in my opinion is truly *magnificent, magnificent, magnificent*! Hence thanks and kudos to Prof Pontius and his collaborators.) This repository is thus my first attempt to learn and my record of learning the Intensity Analysis framework implementation using R software using dataset from one of my land cover change studies (see [De Alban et al 2019](https://doi.org/10.3390/su11041139) published in Sustainability journal and its accompanying GitHub [repository](https://github.com/dondealban/ms-sustainability-2019)).
 
+## Table of Contents
+- [What is the Intensity Analysis framework?](#what_is_intensity_analysis)
+- [Dataset](#dataset)
+- [An Intensity Analysis Workflow Example](#workflow)
+    + [Ingest](#ingest)
+    + [Load Rasters](#load_rasters)
+    + [Create Lists and Vectors](#create_lists_vectors)
+    + [Implement Intensity Analysis](#intensity_analysis)
+    + [View Outputs](#view_outputs)
+    + [Save Outputs](#save_outputs)
+- [References](#references)
+- [Want to Contribute?](#contribute)
+
 <a name="what_is_intensity_analysis"></a>
 
 ## What is the Intensity Analysis framework?
@@ -182,3 +195,8 @@ De Alban, J.D.T., Prescott, G.W., Woods, K.M., Jamaludin, J., Latt, K.T., Lim, C
 
 <a name="pontius_khallaghi_2019"></a>
 Pontius, R.G., Khallaghi, S. (2019) intensity.analysis: Intensity of Change for Comparing Categorical Maps from Sequential Intervals.
+
+<a name="contribute"></a>
+
+## Want to Contribute?
+In case you wish to contribute or suggest changes, please feel free to fork this repository. Commit your changes and submit a pull request. Thanks.
