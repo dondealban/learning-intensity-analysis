@@ -83,6 +83,7 @@ TIAname <- file.path(normalizePath(getwd()), "TIA.csv")
 TIA2csv(TIA.output, time.points, categories, TIAname)
 
 # Save the cross-tabulation matrices
+setwd("/Users/dondealban/Dropbox/Research/learning-intensity-analysis/outputs/")
 crosstab_1 <- crosstabulation[[1]] #1992-1997
 write.csv(crosstab_1, "CrossTab_I1.csv")
 crosstab_2 <- crosstabulation[[2]] #1997-2004
