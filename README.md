@@ -67,25 +67,32 @@ lc2015[lc2015 <= 0] <- NA
 <a name="create_lists_vectors"></a>
 
 ### C. Create Lists and Vectors
-We then create lists and vectors required by the `multicrosstab` function in `intensity.analysis` to calculate the cross-tabulation matrices for each time-interval. First, we create a list of the raster data from the previous step. Second, we create a character vector of time-points including all four years: 1992, 1997, 2004, and 2015. Finally, we create a character vector of land cover categories listed in the particular order shown in the table above. 
+We then create lists and vectors required by the `multicrosstab` function in `intensity.analysis` to calculate the cross-tabulation matrices for each time-interval. First, we create a list of the raster data from the previous step. Second, we create a character vector of time-points including all four years: 1992, 1997, 2004, and 2015. Finally, we create a character vector of land cover categories listed in the particular order shown in the table above.
 ```R
 # Create a list of raster data
-raster.layers <- list(lc1992, lc1997, lc2004, lc2015) 
+raster.layers <- list(lc1992, lc1997, lc2004, lc2015)
 
 # Create character vector of time-points
 time.points <- c("1992","1997","2004","2015")
 
 # Create character vector of land cover categories
-categories <- c("Forest","Mosaic Vegetation","Shrubland","Other Vegetation","Cropland","Non-Vegetation") 
+categories <- c("Forest","Mosaic Vegetation","Shrubland","Other Vegetation","Cropland","Non-Vegetation")
 ```
 
 <a name="intensity_analysis"></a>
 
 ### D. Implement Intensity Analysis
-We generate multiple cross-tabulation matrices (or transition matrices) for each time-interval, 1992–1997, 1997–2004, 2004–2015. We accomplish this by calling the `multicrosstab` function and using the `raster.layers`, `time.points`, and `categories` lists/vectors that we created previously as the function's parameters: 
+We generate multiple cross-tabulation matrices (or transition matrices) for each time-interval, 1992–1997, 1997–2004, 2004–2015. We accomplish this by calling the `multicrosstab` function and using the `raster.layers`, `time.points`, and `categories` lists/vectors that we created previously as the function's parameters:
 ```R
 crosstabulation <- multicrosstab(raster.layers, time.points, categories)
 ```
+The `crosstabulation` variable contains the cross-tabulation matrices for each of the three time-intervals, 1992–1997, 1997–2004, 2004–2015, which are stored inside three elements [[1]], [[2]], and [[3]] of the variable, respectively. We can display the cross-tabulation matrix of time-interval 2004–2015 using the following:
+```R
+crosstabulation[[3]]
+```
+
+
+
 To calculate the three levels of Intensity Analysis, we can write the following:
 ```R
 # Interval-level Intensity Analysis
