@@ -155,7 +155,7 @@ For the 1992–1997 interval, we see from the left plot that annual loss was hig
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/CIA4.png" width="500" /> |
 |:---:|:---:|
 
-For the 1997–2004 interval, we see from the left plot that annual loss was high for Forest, and annual gains were high for Shrubland, Mosaic Vegetation, and Cropland. Note that the annual loss in terms of pixels for Forest during this time-interval (close to 10000 pixels) is higher than the annual loss in terms of pixels for Forest during the 1992–1997 time-interval (close to 1000 pixels only). Then, for the plot on the right, we see that the annual loss change intensities were beyond the uniform intensity (blue vertical dashed line) for Forest only, indicating that it was an actively losing category during the time-interval, whereas the annual gain change intensities of Shrubland, Mosaic Vegetation, and Other Vegetation were beyond the uniform intensity, indicating that these were actively gaining categories during the time-interval.
+For the 1997–2004 interval, we see from the left plot that annual loss was high for Forest, and annual gains were high for Shrubland, Mosaic Vegetation, and Other Vegetation. Note that the annual loss in terms of pixels for Forest during this time-interval (close to 10000 pixels) is higher than the annual loss in terms of pixels for Forest during the 1992–1997 time-interval (close to 1000 pixels only). Then, for the plot on the right, we see that the annual loss change intensities were beyond the uniform intensity (blue vertical dashed line) for Forest only, indicating that it was an actively losing category during the time-interval, whereas the annual gain change intensities of Shrubland, Mosaic Vegetation, and Other Vegetation were beyond the uniform intensity, indicating that these were actively gaining categories during the time-interval.
 
 ###### (c) Category-level intensity analysis for 2004–2015 time-interval
 
@@ -167,28 +167,32 @@ For the 2004–2015 interval, we see from the left plot that annual loss was hig
 #### Transition-level intensity analysis
 The result of the transition-level intensity analysis shows the following plots, specifically for the transitions of Forest loss or deforestation (i.e., From Forest) for each time-interval. The output plots for the other land cover categories are found in the [outputs](https://github.com/dondealban/learning-intensity-analysis/tree/master/outputs) folder of this repository.
 
-The plots on the left shows the annual transition size in terms of number of elements/pixels for the specific land cover category during a specific time-interval where the red bars indicate annual loss and the green bars indicate annual gain for a specific category. On the other hand, the plots on the right shows the annual change intensity by category (as a % of the category) during a specific time-interval where the light red bars indicate annual loss for the category while the light green bars indicate annual gain intensity for the category.
+**The plots on the left shows the annual transition size in terms of number of elements/pixels for the specific land cover category during a specific time-interval where the red bars indicate annual loss and the green bars indicate annual gain for a specific category. On the other hand, the plots on the right shows the annual change intensity by category (as a % of the category) during a specific time-interval where the light red bars indicate annual loss for the category while the light green bars indicate annual gain intensity for the category.**
 
-Time interval 1992–1997
+###### (a) Transition-level intensity analysis for 1992–1997 time-interval
 
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_6.png" width="500" /> |
 |:---:|:---:|
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_4.png" width="500" /> |
 | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_9.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_10.png" width="500" /> |
 
+For the 1992–1997 interval,
 
+###### (b) Transition-level intensity analysis for 1997–2004 time-interval
 
-Time interval 1997–2004
-
-| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_1.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_2.png" width="500" /> |
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_6.png" width="500" /> |
 |:---:|:---:|
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_4.png" width="500" /> |
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_7.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA2_8.png" width="500" /> |
 
 
 
-Time interval 2004–2015
+###### (c) Transition-level intensity analysis for 2004–2015 time-interval
 
-| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_1.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_2.png" width="500" /> |
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_5.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA3_6.png" width="500" /> |
 |:---:|:---:|
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_3.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_4.png" width="500" /> |
+| <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_9.png" width="500" /> | <img src="https://github.com/dondealban/learning-intensity-analysis/blob/master/outputs/TIA1_10.png" width="500" /> |
 
 
 
